@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC
+	"-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+
+			body
+			{
+			}
+
+		</style>
+		<script type="text/javascript" src="dt.js">
+		</script>
+	</head>
+	<body onLoad="dt.init();">
+		<div>
+			<input type="button" id="edit" value="Edit" onClick="dt.edit();">
+			<input type="button" id="split" value="Split" onClick="dt.split();">
+			<input type="button" id="splitMulti" value="Split (multi-way)" onClick="dt.splitMulti();">
+			<input type="button" id="prune" value="Prune" onClick="dt.prune();">
+			<input type="button" id="reset" value="Reset" onClick="dt.reset(false);">
+			<input type="button" id="run" value="Run" onClick="dt.run();">
+		</div>
+		<div>
+			<canvas id="dt" width="1400" height="800" style="border: thin solid black;">
+			</canvas>
+		</div>
+		<div>
+			<textarea id="data" cols="80" rows="4">
+			</textarea>
+			<input type="button" id="import" value="Import" onClick="dt.importData(false);">
+		</div>
+	</body>
+</html>
